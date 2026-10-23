@@ -1,0 +1,453 @@
+// for loop 10 Questions
+void main() {
+
+  // 1. Print numbers from 1 to 10
+  for (int i = 1; i <= 10; i++) {
+    print(i);
+  }
+  print("__________________________________________________");
+
+  // 2. Print numbers from 20 to 1
+  for (int i = 20; i >= 1; i--) {
+    print(i);
+  }
+  print("__________________________________________________");
+
+  // 3. Print even numbers from 1 to 50
+  for (int i = 1; i <= 50; i++) {
+    if (i % 2 == 0) {
+      print(i);
+    }
+  }
+  print("__________________________________________________");
+
+  // 4. Print odd numbers from 1 to 50
+  for (int i = 1; i <= 50; i++) {
+    if (i % 2 != 0) {
+      print(i);
+    }
+  }
+  print("__________________________________________________");
+
+  // 5. Table of 7
+  for (int i = 1; i <= 10; i++) {
+    print("7 x $i = ${7 * i}");
+  }
+  print("__________________________________________________");
+
+  // 6. Sum of numbers from 1 to 100
+  int sum = 0;
+
+  for (int i = 1; i <= 100; i++) {
+    sum = sum + i;
+  }
+
+  print("Sum = $sum");
+  print("__________________________________________________");
+
+  // 7. Factorial of 5
+  int number = 5;
+  int factorial = 1;
+
+  for (int i = 1; i <= number; i++) {
+    factorial = factorial * i;
+  }
+
+  print("Factorial = $factorial");
+  print("__________________________________________________");
+
+  // 8. Print squares from 1 to 10
+  for (int i = 1; i <= 10; i++) {
+    print(i * i);
+  }
+  print("__________________________________________________");
+
+  // 9. Count numbers divisible by 5
+  int count = 0;
+
+  for (int i = 1; i <= 100; i++) {
+    if (i % 5 == 0) {
+      count++;
+    }
+  }
+
+  print("Count = $count");
+  print("__________________________________________________");
+
+  // 10. Print star pattern
+  for (int i = 1; i <= 5; i++) {
+    for (int j = 1; j <= i; j++) {
+      print("*");
+    }
+    print("");
+  }
+  print("__________________________________________________");
+
+
+
+// for-in loop 10 Questions
+
+  // 1. Print all numbers
+  var numbers = [10, 25, 8, 14, 31, 6];
+
+  for (var num in numbers) {
+    print(num);
+  }
+  print("__________________________________________________");
+
+
+  // 2. Print all names
+  var names = ["Ali", "Ahmed", "Sara", "Usman", "Ayesha"];
+
+  for (var name in names) {
+    print(name);
+  }
+  print("__________________________________________________");
+
+
+  // 3. Sum of all numbers
+  var nums = [10, 25, 8, 14, 31, 6];
+  var sum = 0;
+
+  for (var num in nums) {
+    sum = sum + num;
+  }
+
+  print("Sum = $sum");
+  print("__________________________________________________");
+
+
+  // 4. Find the largest number
+  var numbers2 = [10, 25, 8, 14, 31, 6];
+  var largest = numbers2[0];
+
+  for (var num in numbers2) {
+    if (num > largest) {
+      largest = num;
+    }
+  }
+
+  print("Largest number = $largest");
+  print("__________________________________________________");
+
+
+  // 5. Find the smallest number
+  var numbers3 = [10, 25, 8, 14, 31, 6];
+  var smallest = numbers3[0];
+
+  for (var num in numbers3) {
+    if (num < smallest) {
+      smallest = num;
+    }
+  }
+
+  print("Smallest number = $smallest");
+  print("__________________________________________________");
+
+
+  // 6. Count even numbers
+  var numbers4 = [10, 25, 8, 14, 31, 6];
+  var count = 0;
+
+  for (var num in numbers4) {
+    if (num % 2 == 0) {
+      count++;
+    }
+  }
+
+  print("Even numbers = $count");
+  print("__________________________________________________");
+
+
+  // 7. Print names with more than five characters
+  var names2 = ["Ali", "Ahmed", "Usman", "Ayesha", "Ibrahim"];
+
+  for (var name in names2) {
+    if (name.length > 5) {
+      print(name);
+    }
+  }
+  print("__________________________________________________");
+
+
+  // 8. Sum of all odd numbers
+  var numbers5 = [10, 25, 8, 14, 31, 6, 7, 9];
+  var oddSum = 0;
+
+  for (var num in numbers5) {
+    if (num % 2 != 0) {
+      oddSum = oddSum + num;
+    }
+  }
+
+  print("Sum of odd numbers = $oddSum");
+  print("__________________________________________________");
+
+
+  // 9. Count numbers greater than 10
+  var numbers6 = [10, 25, 8, 14, 31, 6];
+  var total = 0;
+
+  for (var num in numbers6) {
+    if (num > 10) {
+      total++;
+    }
+  }
+
+  print("Numbers greater than 10 = $total");
+  print("__________________________________________________");
+
+
+  // 10. Print fruits with a message
+  var fruits = ["Apple", "Mango", "Banana", "Orange", "Grapes"];
+
+  for (var fruit in fruits) {
+    print("I like $fruit");
+  }
+  print("__________________________________________________");
+
+//while loop 10 questions 
+
+  // 1. Print numbers from 1 to 20
+  var i = 1;
+  while (i <= 20) {
+    print(i);
+    i++;
+  }
+  print("__________________________________________________");
+
+
+  // 2. Print numbers from 50 to 1
+  var a = 50;
+  while (a >= 1) {
+    print(a);
+    a--;
+  }
+  print("__________________________________________________");
+
+
+  // 3. Print even numbers from 2 to 30
+  var b = 2;
+  while (b <= 30) {
+    print(b);
+    b += 2;
+  }
+  print("__________________________________________________");
+
+
+  // 4. Sum of numbers from 1 to 50
+  var c = 1;
+  var sum = 0;
+
+  while (c <= 50) {
+    sum = sum + c;
+    c++;
+  }
+
+  print("Sum = $sum");
+  print("__________________________________________________");
+
+
+  // 5. Table of a number
+  var number = 5;
+  var d = 1;
+
+  while (d <= 10) {
+    print("$number x $d = ${number * d}");
+    d++;
+  }
+  print("__________________________________________________");
+
+
+  // 6. Count digits in a number
+  var num = 12345;
+  var temp = num;
+  var digits = 0;
+
+  while (temp > 0) {
+    temp = temp ~/ 10;
+    digits++;
+  }
+
+  print("Digits = $digits");
+  print("__________________________________________________");
+
+
+  // 7. Reverse a number
+  var num2 = 1234;
+  var reverse = 0;
+
+  while (num2 > 0) {
+    var digit = num2 % 10;
+    reverse = reverse * 10 + digit;
+    num2 = num2 ~/ 10;
+  }
+
+  print("Reverse = $reverse");
+  print("__________________________________________________");
+
+
+  // 8. Sum of digits
+  var num3 = 456;
+  var digitSum = 0;
+
+  while (num3 > 0) {
+    var digit = num3 % 10;
+    digitSum = digitSum + digit;
+    num3 = num3 ~/ 10;
+  }
+
+  print("Sum of digits = $digitSum");
+  print("__________________________________________________");
+
+
+  // 9. Check palindrome number
+  var num4 = 121;
+  var original = num4;
+  var reversed = 0;
+
+  while (num4 > 0) {
+    var digit = num4 % 10;
+    reversed = reversed * 10 + digit;
+    num4 = num4 ~/ 10;
+  }
+
+  if (original == reversed) {
+    print("Palindrome number");
+  } else {
+    print("Not a palindrome number");
+  }
+  print("__________________________________________________");
+
+
+  // 10. Print numbers from 1 to 100
+  var e = 1;
+
+  while (e <= 100) {
+    print(e);
+    e++;
+  }
+  print("__________________________________________________");
+
+// do-while loop 10 Questions
+
+  // 1. Print numbers from 1 to 10
+  var i = 1;
+
+  do {
+    print(i);
+    i++;
+  } while (i <= 10);
+
+  print("__________________________________________________");
+
+
+  // 2. Print numbers from 10 to 1
+  var a = 10;
+
+  do {
+    print(a);
+    a--;
+  } while (a >= 1);
+
+  print("__________________________________________________");
+
+
+  // 3. Print odd numbers from 1 to 25
+  var b = 1;
+
+  do {
+    print(b);
+    b += 2;
+  } while (b <= 25);
+
+  print("__________________________________________________");
+
+
+  // 4. Table of 3
+  var c = 1;
+
+  do {
+    print("3 x $c = ${3 * c}");
+    c++;
+  } while (c <= 10);
+
+  print("__________________________________________________");
+
+
+  // 5. Sum of numbers from 1 to 20
+  var d = 1;
+  var sum = 0;
+
+  do {
+    sum = sum + d;
+    d++;
+  } while (d <= 20);
+
+  print("Sum = $sum");
+  print("__________________________________________________");
+
+
+  // 6. Print welcome five times
+  var e = 1;
+
+  do {
+    print("Welcome to Dart");
+    e++;
+  } while (e <= 5);
+
+  print("__________________________________________________");
+
+
+  // 7. Continue until the number becomes 0
+  var number = 5;
+
+  do {
+    print("Number = $number");
+    number--;
+  } while (number != 0);
+
+  print("You reached 0");
+  print("__________________________________________________");
+
+
+  // 8. Add numbers until total is greater than 100
+  var total = 0;
+  var num = 30;
+
+  do {
+    total = total + num;
+    print("Total = $total");
+    num += 30;
+  } while (total <= 100);
+
+  print("Total is greater than 100");
+  print("__________________________________________________");
+
+
+  // 9. Print numbers from 1 to n
+  var n = 10;
+  var f = 1;
+
+  do {
+    print(f);
+    f++;
+  } while (f <= n);
+
+  print("__________________________________________________");
+
+
+  // 10. Do-while runs at least once
+  var g = 10;
+
+  do {
+    print("This prints at least once");
+    g++;
+  } while (g < 5);
+
+  print("__________________________________________________");
+
+
+
+}
+
